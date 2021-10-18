@@ -63,7 +63,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
     position: relative;
@@ -161,7 +161,7 @@ body {
 .btn {
     border: 2px solid $scnd_color;
     border-radius: 10px;
-    padding: 20px 30px;
+    padding: 15px 25px;
     font-size: 1.1rem;
     font-weight: 500;
     transition: 0.7s
@@ -173,33 +173,81 @@ body {
 }
 
 .btn:hover {
-    transform: scale(1.1);
-    -webkit-box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.3);
-    -moz-box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.3);
-    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+    -webkit-box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.3);
+    -moz-box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.3);
 }
 
 .menu {
     position: relative;
     display: flex;
     flex-direction: row;
-}
-
-.menu_decor {
-    background: url('../img/photo/photo_2021-10-16_16-17-39.jpg');
-    @include back();
-    width: 50%;
-    width: 50%;
-    height: 100%;
-    position: relative;
-}
-
-.menu_decor:after {
-    @include mask();
+    padding-bottom: 40px;
 }
 
 .menu_title {
     top: 50%;
     right: -1%;
     transform: rotate(90deg);
+}
+
+.tab_btn {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.img_tab {
+    width: 50px;
+}
+
+.tab_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tab_txt {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-right: 2px solid $scnd_color;
+    width: 25%;
+}
+
+.tab_txt:last-child {
+    border-right: none;
+}
+
+.menu_subtitle {
+    border-bottom: 1px solid $scnd_color;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.menu_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.call_action {
+    padding: 20px;
+    position: relative;
+    background-image: url('../img/photo/photo_2021-10-16_16-17-19.jpg');
+    @include back();
+}
+
+.call_action:after {
+    @include mask();
+}
+
+.call_subtitle {
+    text-align: center;
 }
