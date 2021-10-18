@@ -253,7 +253,6 @@ body {
 }
 
 .delivery {
-    height: 1000px;
     display: flex;
     flex-direction: row;
     position: relative;
@@ -275,7 +274,6 @@ body {
     background: url('../img/photo/photo_2021-10-16_16-17-39.jpg');
     @include back();
     width: 50%;
-    height: 100%;
     position: relative;
 }
 
