@@ -220,7 +220,8 @@ body {
 
 .delivery,
 .catering,
-.menu {
+.menu,
+.contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -364,7 +365,8 @@ body {
   margin-bottom: 15px;
 }
 
-.delivery_content {
+.delivery_content,
+.contacts_content {
   width: 50%;
   padding: 50px;
   padding-left: 12%;
@@ -396,13 +398,60 @@ body {
   z-index: 1;
 }
 
-.catering {
-  height: 1000px;
-}
-
 .catering_title {
   top: 50%;
   right: -4%;
   -webkit-transform: rotate(90deg) !important;
           transform: rotate(90deg) !important;
+}
+
+.catering_decor {
+  background-image: url("../img/photo/photo_2021-10-16_16-17-39.jpg");
+}
+
+.catering_content {
+  width: 50%;
+  padding: 50px;
+  padding-right: 12%;
+}
+
+.catering_content p,
+.delivery_content p {
+  margin-bottom: 20px;
+}
+
+.contacts_title {
+  top: 50%;
+  left: -5%;
+  -webkit-transform: rotate(-90deg) !important;
+          transform: rotate(-90deg) !important;
+}
+
+.contacts_map {
+  width: 50%;
+}
+
+.contacts_name {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.contacts_subtitle {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.contacts_item {
+  margin-bottom: 25px;
+}
+
+.contacts_item a {
+  display: block;
+}
+
+ymaps {
+  color: black;
 }
