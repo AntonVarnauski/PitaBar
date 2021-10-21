@@ -196,7 +196,7 @@ body {
 .menu_title {
     top: 50%;
     right: -1%;
-    transform: rotate(90deg);
+    transform: rotate(90deg)!important;
 }
 
 .tab_btn {
@@ -275,7 +275,7 @@ body {
 .delivery_title {
     top: 50%;
     left: -5%;
-    transform: rotate(-90deg);
+    transform: rotate(-90deg) !important;
 }
 
 .delivery_subtitle {
