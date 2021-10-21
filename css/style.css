@@ -53,9 +53,17 @@ body {
 
 .header {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: 9999;
-  top: 0;
+  bottom: 0;
+  position: fixed;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav {
@@ -187,6 +195,15 @@ body {
   font-weight: 500;
   -webkit-transition: 0.7s;
   transition: 0.7s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .btn_second {
@@ -277,6 +294,7 @@ body {
   margin-bottom: 10px;
   margin-top: 10px;
   text-align: center;
+  padding-bottom: 10px;
 }
 
 .menu_item {
@@ -298,7 +316,7 @@ body {
   background-image: url("../img/photo/photo_2021-10-16_16-17-19.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: bottom center;
 }
 
 .call_action:after {
@@ -317,6 +335,12 @@ body {
   text-align: center;
 }
 
+.call_btn {
+  width: 240px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
 .delivery {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -333,6 +357,11 @@ body {
   left: -5%;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
+}
+
+.delivery_subtitle {
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 .delivery_content {
