@@ -29,3 +29,14 @@ $(function() {
         }
     });
 });
+
+$('.tab').click(function() {
+    let id = $(this).attr('data-tab'),
+        content = $('.tab_content[data-tab="' + id + '"]');
+
+    $('.tab.active').removeClass('active');
+    $(this).addClass('active');
+    console.log(id)
+    $('.tab_content.tab_active').removeClass('tab_active');
+    content.addClass('tab_active');
+});
