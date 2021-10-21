@@ -218,8 +218,9 @@ body {
   box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.3);
 }
 
+.delivery,
+.catering,
 .menu {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,6 +228,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  position: relative;
+}
+
+.menu {
   padding-bottom: 40px;
 }
 
@@ -312,7 +317,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 5px;
 }
 
@@ -347,17 +352,6 @@ body {
   margin-top: 30px;
 }
 
-.delivery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  position: relative;
-}
-
 .delivery_title {
   top: 50%;
   left: -5%;
@@ -376,8 +370,8 @@ body {
   padding-left: 12%;
 }
 
-.delivery_decor {
-  background: url("../img/photo/photo_2021-10-16_16-17-39.jpg");
+.delivery_decor,
+.catering_decor {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -385,7 +379,12 @@ body {
   position: relative;
 }
 
-.delivery_decor:after {
+.delivery_decor {
+  background-image: url("../img/photo/photo_2021-10-16_16-17-39.jpg");
+}
+
+.delivery_decor:after,
+.catering_decor:after {
   content: "";
   display: block;
   position: absolute;
@@ -395,4 +394,15 @@ body {
   right: 0;
   bottom: 0;
   z-index: 1;
+}
+
+.catering {
+  height: 1000px;
+}
+
+.catering_title {
+  top: 50%;
+  right: -4%;
+  -webkit-transform: rotate(90deg) !important;
+          transform: rotate(90deg) !important;
 }
