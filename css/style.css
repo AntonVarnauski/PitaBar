@@ -262,6 +262,18 @@ body {
   width: 50px;
 }
 
+.red_btn {
+  color: red;
+}
+
+.tab_btn a {
+  font-size: 1.8rem;
+}
+
+.tab_btn a img {
+  margin-right: 15px;
+}
+
 .tab_content {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;

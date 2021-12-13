@@ -218,6 +218,18 @@ body {
     width: 50px;
 }
 
+.red_btn {
+    color: red;
+}
+
+.tab_btn a {
+    font-size: 1.8rem;
+}
+
+.tab_btn a img {
+    margin-right: 15px;
+}
+
 .tab_content {
     flex-direction: row;
     justify-content: space-between;
@@ -367,3 +379,25 @@ body {
 ymaps {
     color: black;
 }
+
+// .accordion {
+//     background-color: #eee;
+//     color: #444;
+//     cursor: pointer;
+//     padding: 18px;
+//     width: 100%;
+//     text-align: left;
+//     border: none;
+//     outline: none;
+//     transition: 0.4s;
+// }
+// .active,
+// .accordion:hover {
+//     background-color: #ccc;
+// }
+// .panel {
+//     padding: 0 18px;
+//     background-color: white;
+//     display: none;
+//     overflow: hidden;
+// }
