@@ -266,6 +266,10 @@ body {
   color: red;
 }
 
+.sunny_btn {
+  color: #dfc103;
+}
+
 .tab_btn a {
   font-size: 1.5rem;
 }
