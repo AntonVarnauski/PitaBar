@@ -15,9 +15,9 @@ document.querySelectorAll('a[href^="#"').forEach(link => {
     });
 });
 $(function() {
-    var h_hght = $('.hello').outerHeight();
-    var h_nav = $('.header').outerHeight();
-    var top;
+    let h_hght = $('.hello').outerHeight();
+    let h_nav = $('.header').outerHeight();
+    let top;
     $(window).scroll(function() {
         top = $(this).scrollTop();
         if ((h_hght - top) <= h_nav) {
