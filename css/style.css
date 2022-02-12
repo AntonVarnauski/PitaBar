@@ -202,9 +202,9 @@ body {
   border-radius: 10px;
   padding: 15px 25px;
   font-size: 1.1rem;
-  font-weight: 500;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
+  font-weight: 700;
+  -webkit-transition: 0.7s !important;
+  transition: 0.7s !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -222,9 +222,10 @@ body {
 }
 
 .btn:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  font-weight: 700;
+  -webkit-transform: scale(1.05) !important;
+          transform: scale(1.05) !important;
+  -webkit-transition: 0.7s !important;
+  transition: 0.7s !important;
   background: whitesmoke;
   color: #0f0f0f;
   -webkit-box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.3);
@@ -276,11 +277,11 @@ body {
 }
 
 .red_btn {
-  color: red;
+  color: red !important;
 }
 
 .sunny_btn {
-  color: #dfc103;
+  color: #dfc103 !important;
 }
 
 .tab_btn a {
@@ -456,12 +457,29 @@ body {
 }
 
 .gallery_img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: none;
+  max-height: none;
   width: 100%;
+  height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .gallery_item a {
   display: block;
   position: relative;
+  height: 0;
+  width: 100%;
+  height: 100px;
+  padding-top: 100%;
+  overflow: hidden;
 }
 
 .gallery_item a::after {
@@ -573,7 +591,7 @@ ymaps {
   margin-top: 10px;
 }
 
-@media (max-width: 1400px) and (min-width: 1201px) {
+@media (max-width: 1440px) and (min-width: 1201px) {
   .delivery_title,
 .contacts_title {
     left: -7%;
