@@ -472,6 +472,10 @@ body {
   max-width: 100%;
 }
 
+.gallery_item {
+  overflow: hidden;
+}
+
 .gallery_item a {
   display: block;
   position: relative;
@@ -480,9 +484,19 @@ body {
   height: 100px;
   padding-top: 100%;
   overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.gallery_item a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .gallery_item a::after {
+  overflow: hidden;
   content: "";
   display: block;
   position: absolute;
