@@ -252,6 +252,7 @@ body {
     justify-content: space-between;
     align-items: center;
     display: none;
+    flex-wrap: wrap;
 }
 
 .tab_active {
@@ -432,12 +433,49 @@ ymaps {
     margin-top: 10px;
 }
 
-@media (max-width:1400px) and (min-width:1200px) {
+@media (max-width:1400px) and (min-width:1201px) {
     .delivery_title,
     .contacts_title {
         left: -7%;
     }
     .catering_title {
         right: -7%;
+    }
+    .tab_txt {
+        width: 50%;
+    }
+    .tab_txt:nth-child(2) {
+        border-right: 0;
+    }
+}
+
+@media (max-width:1200px) and (min-width:901px) {
+    .main_title {
+        padding-bottom: 5%;
+    }
+    .main_nav {
+        width: 75%;
+    }
+    .tab_txt {
+        width: 50%;
+    }
+    .tab_txt:nth-child(2) {
+        border-right: 0;
+    }
+    .delivery_title,
+    .contacts_title {
+        left: -10%;
+    }
+    .catering_title {
+        right: -11%;
+    }
+}
+
+@media (max-width:1000px) {
+    .hello {
+        align-items: flex-start;
+    }
+    .main_title {
+        padding-top: 7%;
     }
 }
