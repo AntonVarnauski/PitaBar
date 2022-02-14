@@ -847,3 +847,41 @@ ymaps {
     display: block;
   }
 }
+@media (max-width: 768px) {
+  .delivery_decor,
+.catering_decor {
+    display: none;
+  }
+
+  .delivery_content,
+.catering_content,
+.contacts_content,
+.contacts_map {
+    width: 100%;
+  }
+
+  .delivery,
+.catering,
+.contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .contacts_map {
+    height: 500px;
+  }
+
+  .main_title {
+    font-size: 2rem;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .call_subtitle {
+    font-size: 1.5rem;
+  }
+}
