@@ -295,6 +295,10 @@ body {
     @include back(bottom center);
 }
 
+.title_mob {
+    display: none;
+}
+
 .call_action:after {
     @include mask();
 }
@@ -500,10 +504,33 @@ ymaps {
 }
 
 @media (max-width:1000px) {
+    .main_title {
+        padding: 7% 0;
+    }
+}
+
+@media (max-width:900px) {
+    .title,
+    .header,
+    .btn_block {
+        display: none;
+    }
+    .delivery_content,
+    .catering_content,
+    .contacts_content {
+        padding: 50px;
+    }
     .hello {
+        height: 100%;
         align-items: flex-start;
     }
-    .main_title {
-        padding-top: 7%;
+    .title_mob {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        color: $scnd_color;
+        font-size: 2rem;
+        opacity: 0.8;
+        margin-bottom: 50px;
     }
 }
