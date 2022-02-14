@@ -933,7 +933,6 @@ ymaps {
     width: 100%;
     color: white;
     overflow: hidden;
-    border: 1px solid whitesmoke;
   }
   .tab_mob-label {
     display: -webkit-box;
@@ -943,13 +942,13 @@ ymaps {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 1em;
-    background: #0f0f0f;
+    background: #232323;
     font-weight: bold;
     cursor: pointer;
     /* Icon */
   }
   .tab_mob-label:hover {
-    background: black;
+    background: #0a0a0a;
   }
   .tab_mob-label::after {
     content: "❯";
@@ -976,15 +975,15 @@ ymaps {
             justify-content: flex-end;
     padding: 1em;
     font-size: 0.75em;
-    background: #0f0f0f;
+    background: #232323;
     cursor: pointer;
   }
   .tab_mob-close:hover {
-    background: black;
+    background: #0a0a0a;
   }
 
   input:checked + .tab_mob-label {
-    background: black;
+    background: #0a0a0a;
   }
   input:checked + .tab_mob-label::after {
     -webkit-transform: rotate(90deg);
@@ -993,5 +992,23 @@ ymaps {
   input:checked ~ .tab_mob-content {
     max-height: 100vh;
     padding: 1em;
+  }
+}
+@media (max-width: 600px) {
+  .tab_btn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 75%;
+    margin: auto;
+  }
+
+  .tab_btn .btn {
+    margin-bottom: 15px;
+  }
+
+  .tab_btn .btn:first-child {
+    margin-top: 15px;
   }
 }
