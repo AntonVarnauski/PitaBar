@@ -133,7 +133,7 @@ body {
 
 .hello {
   position: relative;
-  background-image: url("../img/photo/photo_2021-10-16_16-17-58.jpg");
+  background-image: url("../img/photo/pita - 20 mar 22' - 007.JPG");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -182,6 +182,10 @@ body {
   text-align: center;
   padding: 20px;
   padding: 10% 0;
+  font-weight: 100;
+  width: 50%;
+  display: block;
+  margin: 0 auto;
 }
 
 .btn_block {
@@ -231,6 +235,32 @@ body {
   color: #0f0f0f;
   -webkit-box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.3);
   box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.3);
+}
+
+.menu_btn {
+  background-color: black;
+  border-radius: 10px;
+  padding: 15px 25px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  -webkit-transition: 0.7s !important;
+  transition: 0.7s !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu_btn:hover {
+  -webkit-transform: scale(1.05) !important;
+          transform: scale(1.05) !important;
+  -webkit-transition: 0.7s !important;
+  transition: 0.7s !important;
 }
 
 .mob_nav {
@@ -395,8 +425,14 @@ body {
   color: red !important;
 }
 
+.pita_btn {
+  color: whitesmoke;
+  border: 2px solid whitesmoke;
+}
+
 .sunny_btn {
-  color: #dfc103 !important;
+  color: #dfc103;
+  border: 2px solid #dfc103;
 }
 
 .tab_btn a {
@@ -476,10 +512,10 @@ body {
 .call_action {
   padding: 50px;
   position: relative;
-  background-image: url("../img/photo/photo_2021-10-16_16-17-19.jpg");
+  background-image: url("../img/photo/pita - 20 mar 22' - 025.JPG");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom center;
+  background-position: center center;
 }
 
 .title_mob {
@@ -504,9 +540,10 @@ body {
 }
 
 .call_btn {
-  width: 240px;
+  width: 300px;
   margin: 0 auto;
   margin-top: 30px;
+  margin-top: 50px;
 }
 
 .delivery_title {
@@ -658,7 +695,7 @@ body {
 }
 
 .catering_title {
-  top: 50%;
+  top: 40%;
   right: -4%;
   -webkit-transform: rotate(90deg) !important;
           transform: rotate(90deg) !important;

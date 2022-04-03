@@ -18,6 +18,11 @@ $scnd_color: whitesmoke;
     background-position: $position;
 }
 
+@mixin btn($color) {
+    color: $color;
+    border: 2px solid $color;
+}
+
 * {
     text-decoration: none;
     margin: 0;
@@ -130,7 +135,7 @@ body {
 
 .hello {
     position: relative;
-    background-image: url('../img/photo/photo_2021-10-16_16-17-58.jpg');
+    background-image: url('../img/photo/pita\ -\ 20\ mar\ 22\'\ -\ 007.JPG');
     @include back( center center);
     height: 100vh;
     display: flex;
@@ -162,6 +167,10 @@ body {
     text-align: center;
     padding: 20px;
     padding: 10% 0;
+    font-weight: 100;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
 }
 
 .btn_block {
@@ -198,6 +207,23 @@ body {
     -webkit-box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.3);
     -moz-box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.3);
     box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.3);
+}
+
+.menu_btn {
+    background-color: black;
+    border-radius: 10px;
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: 0.7s!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_btn:hover {
+    transform: scale(1.05)!important;
+    transition: 0.7s!important;
 }
 
 .mob_nav {
@@ -332,8 +358,12 @@ body {
     color: red!important;
 }
 
+.pita_btn {
+    @include btn($scnd_color);
+}
+
 .sunny_btn {
-    color: #dfc103!important;
+    @include btn(#dfc103);
 }
 
 .tab_btn a {
@@ -391,8 +421,8 @@ body {
 .call_action {
     padding: 50px;
     position: relative;
-    background-image: url('../img/photo/photo_2021-10-16_16-17-19.jpg');
-    @include back(bottom center);
+    background-image: url('../img/photo/pita\ -\ 20\ mar\ 22\'\ -\ 025.JPG');
+    @include back(center center);
 }
 
 .title_mob {
@@ -409,9 +439,10 @@ body {
 }
 
 .call_btn {
-    width: 240px;
+    width: 300px;
     margin: 0 auto;
     margin-top: 30px;
+    margin-top: 50px;
 }
 
 .delivery_title {
@@ -497,7 +528,7 @@ body {
 }
 
 .catering_title {
-    top: 50%;
+    top: 40%;
     right: -4%;
     transform: rotate(90deg)!important;
 }
