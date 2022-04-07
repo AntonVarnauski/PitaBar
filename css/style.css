@@ -733,6 +733,34 @@ body {
   margin-bottom: 20px;
 }
 
+.team {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/photo/pita - sept  - 0037.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.team_decor {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.team_title {
+  top: 50%;
+  left: -7%;
+  -webkit-transform: rotate(-90deg) !important;
+          transform: rotate(-90deg) !important;
+}
+
 .contacts_title {
   top: 50%;
   left: -5%;

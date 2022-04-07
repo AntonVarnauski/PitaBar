@@ -565,6 +565,23 @@ body {
     margin-bottom: 20px;
 }
 
+.team {
+    position: relative;
+    height: 100vh;
+    background-image: url('../img/photo/pita\ -\ sept\ \ -\ 0037.JPG');
+    @include back(center center)
+}
+
+.team_decor {
+    @include mask();
+}
+
+.team_title {
+    top: 50%;
+    left: -7%;
+    transform: rotate(-90deg) !important;
+}
+
 .contacts_title {
     top: 50%;
     left: -5%;
