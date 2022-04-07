@@ -379,6 +379,10 @@ body {
     @include btn(#dfc103);
 }
 
+.red_btn {
+    @include btn(red);
+}
+
 .tab_btn a {
     font-size: 1.5rem;
 }

@@ -448,6 +448,11 @@ body {
   border: 2px solid #dfc103;
 }
 
+.red_btn {
+  color: red;
+  border: 2px solid red;
+}
+
 .tab_btn a {
   font-size: 1.5rem;
 }
