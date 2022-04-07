@@ -593,7 +593,12 @@ body {
 }
 
 .contacts_item a {
-    display: block;
+    transition: .3s;
+}
+
+.contacts_item a:hover {
+    opacity: 0.6;
+    transition: .3s;
 }
 
 ymaps {

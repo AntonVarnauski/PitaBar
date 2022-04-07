@@ -762,7 +762,14 @@ body {
 }
 
 .contacts_item a {
-  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.contacts_item a:hover {
+  opacity: 0.6;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 ymaps {
