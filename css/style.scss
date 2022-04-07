@@ -847,8 +847,11 @@ ymaps {
         width: 75%;
         margin: auto;
     }
+    .call_action .call_btn {
+        margin-bottom: 0px;
+    }
     .call_btn {
-        width: 200px
+        width: 200px;
     }
     .tab_btn .btn {
         margin-bottom: 15px;

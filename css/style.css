@@ -1101,6 +1101,10 @@ ymaps {
     margin: auto;
   }
 
+  .call_action .call_btn {
+    margin-bottom: 0px;
+  }
+
   .call_btn {
     width: 200px;
   }
