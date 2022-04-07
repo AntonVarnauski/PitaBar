@@ -431,6 +431,18 @@ body {
   border: 2px solid whitesmoke;
 }
 
+.pita .tab_mob-label {
+  color: whitesmoke;
+}
+
+.sunny .tab_mob-label {
+  color: #dfc103;
+}
+
+.red .tab_mob-label {
+  color: red;
+}
+
 .sunny_btn {
   color: #dfc103;
   border: 2px solid #dfc103;

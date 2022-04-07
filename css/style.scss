@@ -363,6 +363,18 @@ body {
     @include btn($scnd_color);
 }
 
+.pita .tab_mob-label {
+    color: $scnd_color;
+}
+
+.sunny .tab_mob-label {
+    color: #dfc103;
+}
+
+.red .tab_mob-label {
+    color: red;
+}
+
 .sunny_btn {
     @include btn(#dfc103);
 }
