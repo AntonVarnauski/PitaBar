@@ -942,6 +942,11 @@ ymaps {
   .mob_nav {
     display: block;
   }
+
+  .team {
+    height: 350px;
+    width: 100%;
+  }
 }
 @media (max-width: 900px) and (min-width: 769px) {
   .tab_txt {
