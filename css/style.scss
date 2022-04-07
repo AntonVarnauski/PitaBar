@@ -736,10 +736,12 @@ ymaps {
 }
 
 @media (max-width:768px) {
-    .delivery_decor,
-    .catering_decor {
+    .delivery_decor {
         display: none;
-        ;
+    }
+    .catering_decor {
+        width: 100%;
+        height: 300px;
     }
     .delivery_content,
     .catering_content,
