@@ -356,7 +356,7 @@ body {
 }
 
 .red_btn {
-    color: red!important;
+    color: #c21414 !important;
 }
 
 .pita_btn {
@@ -372,7 +372,7 @@ body {
 }
 
 .red .tab_mob-label {
-    color: red;
+    color: #c21414;
 }
 
 .sunny_btn {
@@ -380,7 +380,7 @@ body {
 }
 
 .red_btn {
-    @include btn(red);
+    @include btn(#c21414);
 }
 
 .tab_btn a {
@@ -432,6 +432,10 @@ body {
 }
 
 .mob_menu {
+    display: none;
+}
+
+.mobile_menu {
     display: none;
 }
 
@@ -729,6 +733,12 @@ ymaps {
     .tab_txt {
         width: 50%;
     }
+    .tab_btn a {
+        font-size: 1.1rem;
+    }
+    .img_tab {
+        width: 35px;
+    }
     .tab_txt:nth-child(3) {
         /* index 3 because we have hidden mobile tabs */
         border-right: 0;
@@ -736,6 +746,9 @@ ymaps {
 }
 
 @media (max-width:768px) {
+    .call_action {
+        padding: 25px;
+    }
     .delivery_decor {
         display: none;
     }
@@ -761,6 +774,7 @@ ymaps {
         font-size: 1.8rem;
         letter-spacing: -1px;
         line-height: 30px;
+        padding-bottom: 3%;
     }
     .container {
         width: 100%;
@@ -768,8 +782,11 @@ ymaps {
     .call_subtitle {
         font-size: 1.5rem;
     }
-    .tab_txt {
+    .desktop_menu {
         display: none;
+    }
+    .mobile_menu {
+        display: block;
     }
     .mob_menu {
         display: block;
@@ -848,11 +865,6 @@ ymaps {
 }
 
 @media (max-width: 600px) {
-    .tab_btn {
-        flex-direction: column;
-        width: 75%;
-        margin: auto;
-    }
     .call_action .call_btn {
         margin-bottom: 0px;
     }

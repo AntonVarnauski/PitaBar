@@ -36,7 +36,6 @@ $('.tab').click(function() {
 
     $('.tab.active').removeClass('active');
     $(this).addClass('active');
-    console.log(id)
     $('.tab_content.tab_active').removeClass('tab_active');
     content.addClass('tab_active');
 });
