@@ -39,3 +39,12 @@ $('.tab').click(function() {
     $('.tab_content.tab_active').removeClass('tab_active');
     content.addClass('tab_active');
 });
+
+$(function() {
+
+    $('.accordionDrop').hide();
+    $('.accordion').on('click', function() {
+        $(this).next().slideToggle("slow");
+    })
+
+})
