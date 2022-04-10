@@ -139,7 +139,7 @@ body {
     @include back(top center);
     height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 }
 
@@ -166,7 +166,7 @@ body {
     font-size: 3rem;
     text-align: center;
     padding: 20px;
-    padding: 10% 0;
+    padding: 10% 0 5% 0;
     font-weight: 100;
     width: 50%;
     display: block;
@@ -180,6 +180,7 @@ body {
     flex-direction: row;
     justify-content: space-around;
     margin: 0 auto;
+    margin-bottom: 10%;
 }
 
 .btn {
@@ -702,8 +703,8 @@ ymaps {
         padding: 50px;
     }
     .hello {
-        height: 100%;
-        align-items: flex-start;
+        height: 40vh;
+        align-items: flex-end;
     }
     .title_mob {
         display: block;
