@@ -28,8 +28,7 @@ $scnd_color: whitesmoke;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    // font-family: 'Mulish', sans-serif;
-    font-family: 'Poiret One', cursive;
+    font-family: 'Mulish', sans-serif;
     color: $scnd_color;
 }
 
@@ -172,6 +171,7 @@ body {
     width: 50%;
     display: block;
     margin: 0 auto;
+    font-family: 'Poiret One', cursive;
 }
 
 .btn_block {
