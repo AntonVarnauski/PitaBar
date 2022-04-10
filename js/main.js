@@ -1,19 +1,20 @@
 'use strict'
 AOS.init();
-document.querySelectorAll('a[href^="#"').forEach(link => {
+document.querySelectorAll('.main_nav a[href^="#"').forEach(link => {
     link.addEventListener('click', function(e) {
         e.preventDefault();
         let href = this.getAttribute('href').substring(1);
-        const scrollTarget = document.getElementById(href);
-        const topOffset = document.querySelector('.header').offsetHeight;
-        const elementPosition = scrollTarget.getBoundingClientRect().top;
-        const offsetPosition = elementPosition - topOffset;
+        let scrollTarget = document.getElementById(href);
+        let topOffset = document.querySelector('.header').offsetHeight;
+        let elementPosition = scrollTarget.getBoundingClientRect().top;
+        let offsetPosition = elementPosition - topOffset;
         window.scrollBy({
             top: offsetPosition,
             behavior: 'smooth'
         });
     });
 });
+
 $(function() {
     let h_hght = $('.hello').outerHeight();
     let h_nav = $('.header').outerHeight();
@@ -33,7 +34,6 @@ $(function() {
 $('.tab').click(function() {
     let id = $(this).attr('data-tab'),
         content = $('.tab_content[data-tab="' + id + '"]');
-
     $('.tab.active').removeClass('active');
     $(this).addClass('active');
     $('.tab_content.tab_active').removeClass('tab_active');
@@ -41,10 +41,8 @@ $('.tab').click(function() {
 });
 
 $(function() {
-
     $('.accordionDrop').hide();
     $('.accordion').on('click', function() {
         $(this).next().slideToggle("slow");
     })
-
 })
