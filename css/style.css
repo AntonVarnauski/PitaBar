@@ -445,6 +445,10 @@ body {
   color: #c21414;
 }
 
+.cook .tab_mob-label {
+  color: #0B9688;
+}
+
 .sunny_btn {
   color: #dfc103;
   border: 2px solid #dfc103;
@@ -453,6 +457,11 @@ body {
 .red_btn {
   color: #c21414;
   border: 2px solid #c21414;
+}
+
+.cook_btn {
+  color: #0B9688;
+  border: 2px solid #0B9688;
 }
 
 .tab_btn a {

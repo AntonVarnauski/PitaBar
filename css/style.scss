@@ -377,12 +377,20 @@ body {
     color: #c21414;
 }
 
+.cook .tab_mob-label {
+    color: #0B9688;
+}
+
 .sunny_btn {
     @include btn(#dfc103);
 }
 
 .red_btn {
     @include btn(#c21414);
+}
+
+.cook_btn {
+    @include btn(#0B9688);
 }
 
 .tab_btn a {
