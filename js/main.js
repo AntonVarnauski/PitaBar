@@ -1,6 +1,6 @@
 'use strict'
 AOS.init();
-document.querySelectorAll('.main_nav a[href^="#"').forEach(link => {
+document.querySelectorAll('a[href^="#"').forEach(link => {
     link.addEventListener('click', function(e) {
         e.preventDefault();
         let href = this.getAttribute('href').substring(1);
